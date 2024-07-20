@@ -11,38 +11,84 @@
             }
 
             input {
-                border-width: 1px;;
+                border-width: 1.5px;;
             }
 
             button {
-                background-color: plum;
+                background-color: white;
+                color: blue;
                 cursor: pointer;
-                width: 170px;
+                width: 100px;
                 height: 25px;
-                border-radius: 7px;
-                border-width: 3px;
+                border-radius: 100px;
+                border-width: 2px;
+                border-color: blue;
+            }
+
+            button:hover {
+                background-color: blue;
+                color: white;
+            }
+
+            button:active {
+                opacity: 0.3;
+            }
+
+            textarea {
+                border-width: 1.5px;
+                height: 150px;
+                width: 250px;
+                resize: none;
+                padding-block: 1px;
+                padding-inline: 2px;
+                padding: 1px 0px;
+                margin-top: 2px;
+            }
+
+            h1 {
+                text-align: center;
+                color:white;
+                margin: 0px;
+            }
+
+            .div_heading {
+                background-color: blue;
+                border-radius: 5px;
+                height: 40px;
             }
         </style>
     </head>
-    <body bgcolor="yellowgreen">
+    <body>
+        <div class="div_heading"><h1>Contact Me Page</h1></div>
+        <br>
         <form action="submit_form" method="post">
-            <label>First Name</label><br>
-            <input type="text" name="first_name"><br>
-            <br>
-            <label>Last Name</label><br>
-            <input type="text" name="last_name"><br>
-            <br>
-            <label>Email</label><br>
-            <input type="email" name="email_address"><br>
-            <br>
-            <label>Subject</label><br>
-            <input type="text" name="subject"><br>
-            <br>
-            <label>Message</label><br>
-            <input type="text" name="message_content"><br>
-            <br><br>
-            <button type="submit">Send</button>
-        </form>
+        <div>
+            <label>First Name</label>
+        </div>
+        <input type="text" name="first_name"><br>
+        <br>
+        <div>
+            <label>Last Name</label>
+        </div>
+        <input type="text" name="last_name"><br>
+        <br>
+        <div>
+            <label>Email</label>
+        </div>
+        <input type="email" name="email_address"><br>
+        <br>
+        <div>
+            <label>Subject</label>
+        </div>
+        <input type="text" name="subject"><br>
+        <br>
+        <div>
+            <label>Message</label>
+        </div>
+        <textarea name="message_content"></textarea>
+        <br><br>
+        <button type="submit">Send</button>
+    </form>
         <script>
             alert("Your email has been sent successfully! :)")
         </script>
