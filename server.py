@@ -23,7 +23,7 @@ def send_email():
     data = request.form.to_dict()
     msg = EmailMessage()
     msg["From"] = data.get("email_address")
-    msg["To"] = "pythonemailserver.smtp@gmail.com"
+    msg["To"] = "jamieabrahams123234@gmail.com"
     msg["Subject"] = data.get("subject")
     msg.set_content("From: " + data.get("first_name") + " " + data.get("last_name") + 
                     "\n" + "Email: " + data.get("email_address") + "\n" +
